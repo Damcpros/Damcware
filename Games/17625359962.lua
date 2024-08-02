@@ -12,7 +12,7 @@ local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
 local lplr = PlayerSerivce.LocalPlayer
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
+local GuiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
 
 -- Flight module
 
