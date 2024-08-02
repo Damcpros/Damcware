@@ -1,6 +1,7 @@
 --[[
 	Damcware development by Damc
 	All Guilibrary code written by Damc
+	(I was lazy so Xethrantic helped me fix the config system)
 --]]
 
 local PlayerService = game:GetService("Players")
