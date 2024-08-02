@@ -1,6 +1,6 @@
 --[[
 	Damcware development by Damc
-	All code written by Damc
+	All Guilibrary code written by Damc
 --]]
 
 local PlayerService = game:GetService("Players")
