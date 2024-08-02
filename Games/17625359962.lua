@@ -12,7 +12,7 @@ local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
 
 local getExecEnv = function()
-	return false and getgenv() or {
+	return getgenv and getgenv() or {
 		writefile = function() end,
 		readfile = function() end,
 		loadfile = function() end,
