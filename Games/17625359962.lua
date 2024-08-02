@@ -1,6 +1,5 @@
 --[[
-	Damcware development by Damc
-	All code written by Damc
+	Developed by Damc & Xethantic (Springs)
 --]]
 
 local PlayerService = game:GetService("Players")
@@ -10,11 +9,10 @@ local CoreGui = game:GetService("CoreGui")
 local TextService = game:GetService("TextService")
 local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
-local lplr = PlayerSerivce.LocalPlayer
 
 local GuiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
 
--- Flight module
+lplr = lplr
 
 Flight = GuiLibrary.Windows.Movement.CreateButtonWithOptions({
 	Name = "Flight",
@@ -315,7 +313,7 @@ Noclip = GuiLibrary.Windows.Movement.CreateButtonWithOptions({
 						v.CanCollide = false
 					end
 				end
-				
+
 				noclip = workspace.DescendantAdded:Connect(function(v)
 					if v:IsA("Part") or v:IsA("Meshpart") and v.Name ~= "FallFixInst" and not v:IsDescendantOf(lplr.Character) then 
 						v.CanCollide = false
