@@ -37,7 +37,7 @@ local config = {
 	["Pickers"] = {}
 }
 
-local lplr = PlayerService.LocalPlayer
+lplr = PlayerService.LocalPlayer
 
 if not isfile("DamcWare") then
 	makefolder("DamcWare")
