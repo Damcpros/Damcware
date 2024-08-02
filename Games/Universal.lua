@@ -3,8 +3,6 @@
 	All code written by Damc & Xethrantic
 --]]
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
-
 local PlayerService = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local UserInputService = game:GetService("UserInputService")
@@ -12,6 +10,9 @@ local CoreGui = game:GetService("CoreGui")
 local TextService = game:GetService("TextService")
 local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
+local lplr = PlayerSerivce.LocalPlayer
+
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
 
 Flight = GuiLibrary.Windows.Movement.CreateButtonWithOptions({
 	Name = "Flight",
