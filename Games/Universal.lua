@@ -10,9 +10,10 @@ local CoreGui = game:GetService("CoreGui")
 local TextService = game:GetService("TextService")
 local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
-local lplr = PlayerSerivce.LocalPlayer
 
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
+local GuiLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Damcpros/Damcware/main/GuiLibrary.lua", true))()
+
+lplr = lplr
 
 Flight = GuiLibrary.Windows.Movement.CreateButtonWithOptions({
 	Name = "Flight",
@@ -236,18 +237,6 @@ end)
 Connection3 = mouse.Button2Up:Connect(function()
 	RMBheld = false
 end)
-
-KillAll = GuiLibrary.Windows.Combat.CreateButtonWithOptions({
-	Name = "KillAll",
-	Function = function(callback)
-		if callback then
-			repeat
-				
-				task.wait()
-			until not KillAll.Enabled
-		end
-	end,
-})
 
 local ESPConnection
 
